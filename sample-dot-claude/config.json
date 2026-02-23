@@ -1,0 +1,14 @@
+// Claude supports JSONC, so comments are allowed in this file. 
+// You can remove the comments if you want to use pure JSON. \
+// This file defines the permissions for the Claude agent, specifying which commands it can execute and which files it can read or write.
+{
+  "permissions": {
+    "autoApprove": {
+      // allows the agent to SSH commands on remote hosts
+      "bash": ["ssh server1.domain.com *", "ssh server2.domain.com *", "ssh server3.domain.com *", "ssh server4.domain.com *"],
+      // The "read" and "write" permissions allow the agent to access all files in the project directory.
+      "read": ["**/*"],
+      "write": ["**/*"]
+    }
+  }
+}

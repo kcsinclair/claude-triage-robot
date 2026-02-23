@@ -1,0 +1,24 @@
+// Claude supports JSONC, so comments are allowed in this file. 
+// You can remove the comments if you want to use pure JSON.
+{
+  // This file defines the permissions for the Claude agent, specifying which 
+  // commands it can execute and which files it can read or write.
+  "permissions": {
+    "allow": [
+      "Bash(ping:*)",
+      "Bash(nc:*)",
+      "Bash(ssh:*)",
+      "Bash(dig:*)",
+      "Bash(curl:*)",
+      "Bash(openssl s_client:*)",
+      "Bash(openssl x509:*)",
+      "WebFetch(domain:yourdomain.com)",
+      "WebFetch(domain:otherdomain.com)",
+      "Bash(snmpget:*)",
+      "Bash(snmpwalk:*)",
+      "Bash(snmpbulkwalk:*)",
+      "Bash(snmptrap:*)",
+      "Bash(chmod +x:*)"
+    ]
+  }
+}
