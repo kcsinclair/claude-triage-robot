@@ -39,6 +39,14 @@ claude
 
 Then type a natural language prompt to begin triage.
 
+#### OR try one shot prompting
+
+Try one shot (non interactive) prompting, with the permissions set correctly this provides good results, especially to intergreated into other tools as described in [Using AI for Automated Triage and Impact Analysis](https://kcsinclair42.substack.com/p/using-ai-for-automated-triage-and).
+```
+claude -p 'YOUR PROMPT HERE, SEE BELOW FOR EXAMPLES' --verbose
+```
+--verbose is a good option when debugging things, not normally needed.
+
 ## Required Expertise
 
 To work effectively with this setup, familiarity with the following is helpful:
